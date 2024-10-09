@@ -4,8 +4,8 @@ arr = list(map(int, input().split()))
 def mergeSort(A, p=0, r=n-1):
     if p<r:
         q = (p+r)//2
-        merge_sort(A, p, q)
-        merge_sort(A, q+1, r)
+        mergeSort(A, p, q)
+        mergeSort(A, q+1, r)
         merge(A, p, q, r)
 
 def merge(A, p, q, r):
