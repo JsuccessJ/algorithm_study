@@ -26,5 +26,5 @@ def merge(A, p, q, r):
         j += 1
     A[p:r+1] = tmp
 
-mergeSort(arr,0, n-1)
+mergeSort(arr)
 print(arr)
