@@ -1,7 +1,7 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-def selection_sort(A, n):
+def selectionSort(A, n):
     for last in range(n-1, -1, -1):
         k = theLargest(A, last)
         arr[k], arr[last] = arr[last], arr[k]
