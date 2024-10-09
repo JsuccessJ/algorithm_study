@@ -15,6 +15,3 @@ def radixSort(A, n, k):
             B[start[A[i]//10**(digit-1)%10]] = A[i]
         A = B[1 : n+1]
     return A
-
-arr = radixSort(arr,n,3)
-print(arr)
