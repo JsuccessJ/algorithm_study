@@ -1,3 +1,6 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
 def bubbleSort(A, n):
     global count
     for i in range(n-1, 0, -1):
