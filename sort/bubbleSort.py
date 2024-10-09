@@ -9,6 +9,8 @@ def bubbleSort(A, n):
             if A[j] > A[j+1]:
                 A[j], A[j+1] = A[j+1], A[j]
                 swap = True
-                count += 1
         if not swap:
             break
+
+bubbleSort(arr, n)
+print(arr)
