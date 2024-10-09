@@ -9,7 +9,6 @@ def mergeSort(A, p=0, r=n-1):
         merge(A, p, q, r)
 
 def merge(A, p, q, r):
-    global count
     i,j,tmp = p,q+1,[]
     while i<=q and j<=r:
         if A[i]<=A[j]:
@@ -18,7 +17,6 @@ def merge(A, p, q, r):
         else:
             tmp.append(A[j])
             j += 1
-        count += 1
     while i<=q:
         tmp.append(A[i])
         i += 1
@@ -27,3 +25,6 @@ def merge(A, p, q, r):
         tmp.append(A[j])
         j += 1
     A[p:r+1] = tmp
+
+mergeSort(arr,0, n-1)
+print(arr)
