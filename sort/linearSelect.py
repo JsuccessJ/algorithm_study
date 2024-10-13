@@ -6,12 +6,11 @@ def linearSelect(A,i,p=0,r=n-1):
     if r-p < 5: return select(A, i, p, r);
     t = ceil((r-p+1)/5)
     v = (r-p+1)%5
-    B = [0] * t
+    B = [0]*t
     for j in range(0, t-1*(v!=0)):
         B[j]=select(A, 3, 5*j+p, 5*j+p+4)
-    if v:
-        B[-1] = select(A, ceil(v/2), 5*(t-1)+p, 5*t+v+p-6)
-    M = linearSelect(B, ceil(t/2), 0, t - 1)
+    if v: B[-1] = select(A, ceil(v/2), 5*(t-1)+p, 5*t+v+p-6)
+    M = linearSelect(B, ceil(t/2), 0, t-1)
     q = partitionByMedian(A, p, r, M)
     k = q-p+1
     if i < k: return linearSelect(A, i, p, q-1)
