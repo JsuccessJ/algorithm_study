@@ -15,6 +15,16 @@
 # Output Format
 # 행렬연산의 최소 횟수를 출력한다.
 
+# Sample Input 
+# 4
+# 3 5
+# 5 1
+# 1 8
+# 8 4
+
+# Sample Output 
+# 59
+
 def matrixChain(n):
     m = [[0] * (n+1) for _ in range(n+1)]
     for r in range(1, n):
