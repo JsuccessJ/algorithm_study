@@ -10,6 +10,24 @@
 # Output Format
 # 가장 큰 친구 그룹의 사람 수를 출력한다.
 
+# Sample Input
+# 10 12
+# 1 2
+# 3 1
+# 3 4
+# 5 4
+# 3 5
+# 4 6
+# 5 2
+# 2 1
+# 7 10
+# 1 2
+# 9 10
+# 8 9
+
+# Sample Output
+# 6
+
 class UnionFind:
     def __init__(self):
         self.parent = self.rank = None
