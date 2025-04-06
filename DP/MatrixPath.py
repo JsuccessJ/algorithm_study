@@ -16,6 +16,16 @@
 # Output Format 
 # (1,1)에서 (n,m) 까지 여러 경로 중 가장 빨리 도착 할 수 있는 시간을 출력한다.
 
+# Sample Input
+# 4 4
+# 6 7 12 5
+# 5 3 11 18
+# 7 17 3 3
+# 8 10 14 9
+
+# Sample Output
+# 40
+
 def matrixPath(n, m):
     c = [[float('inf')] * (m+1) for _ in range(n+1)]
     c[0][1] = c[1][0] = 0
