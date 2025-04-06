@@ -13,6 +13,15 @@
 # Output Format
 # 규칙에 맞게 조약돌을 놓고 그 합의 모든 경우의 수중 가장 큰 값을 출력한다.
 
+# Sample Input
+# 8
+# 6 7 12 -5 5 3 11 3
+# -8 10 14 9 7 13 8 5
+# 11 12 7 4 8 -2 9 4
+
+# Sample Output
+# 106
+
 def pebble(m):
     peb = [[0] * 4 for _ in range(m)]
     for i in range(m):
