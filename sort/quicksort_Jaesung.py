@@ -22,3 +22,13 @@ def quick_sort(arr, start, end):
       # 왼쪽, 오른쪽 다시 정렬
     quick_sort(arr, start, right - 1)
     quick_sort(arr, right + 1, end)
+
+
+# 메모리 좀 더 쓰는 코드, 좀 더 쉬움
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[0]
+    left = [x for x in arr[1:] if x <= pivot]
+    right = [x for x in arr[1:] if x > pivot]
+    return quick_sort(left) + [pivot] + quick_sort(right)
